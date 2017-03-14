@@ -8,7 +8,7 @@ console.log('sdads');
 function main()
 {
 	
-   glob('C:/Users/pranav/Desktop/DevOps/mile2/checkbox.iorepo-/server-side/site/**/*.js',{"ignore":['**/node_modules/**']} ,function( err, files ) {
+   glob('/**/*.js',{"ignore":['./**/node_modules/**']} ,function( err, files ) {
 	   console.log(files);
       files.forEach(function(file,index){
          fileBuilders[file] = {};
