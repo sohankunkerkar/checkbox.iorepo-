@@ -55,13 +55,13 @@ function ComplexityBuilder()
                "Maximum Conditions: {3}\t" +
                "Number of Lines: {4}\t"+
                "Big Oh Complexity: {5} \t Status:Failure\n\n"
-  )
+ )
             .format(this.fileName, this.FunctionName, this.StartLine,
                      this.MaxConditions, this.numOfLines, this.MaxNestingDepth)
          );
       }else{
 
-         console.log(
+         /* console.log(
             (
                "FileName:{0}\t{1}(): {2}\n" +
                "============\n" +
@@ -71,11 +71,12 @@ function ComplexityBuilder()
             )
             .format(this.fileName, this.FunctionName, this.StartLine,
                      this.MaxConditions, this.numOfLines, this.MaxNestingDepth)
-         );
+         ); */
       }
 
-        }
+
 };
+}
 
 // A function following the Visitor pattern. Provide current node to visit and function that is evaluated at each node.
 function traverse(object, visitor)
@@ -110,7 +111,7 @@ function traverseWithParents(object, visitor)
                 child.parent = object;
                                         traverseWithParents(child, visitor);
             }
-        }
+ }
     }
 }
 
@@ -165,7 +166,7 @@ function complexity(filePath)
  traverseWithParents(node.test, function(node){
                   if(node.type === 'LogicalExpression'){
                      conditions++;
-                  }
+					   }
                });
                if(conditions > maxConditions){
                   maxConditions = conditions;
@@ -221,7 +222,7 @@ function isDecision(node)
         if( node.type == 'IfStatement' )
         {
                 // Don't double count else/else if
-                if( node.parent && node.parent.type == 'IfStatement' && node.parent["alternate"] )
+ if( node.parent && node.parent.type == 'IfStatement' && node.parent["alternate"] )
                 {
                         return false;
                 }
@@ -278,7 +279,7 @@ function Crazy (argument)
       else if ( secs > 59 && secs < 3600 )
       {
           var mints = secs / 60;
-          var remainder = parseInt(secs.toString().split(".")[0]) -
+  var remainder = parseInt(secs.toString().split(".")[0]) -
 (parseInt(mints.toString().split(".")[0]) * 60);
           var szmin;
           if ( mints > 1 )
@@ -306,7 +307,6 @@ remainder.toString() + " seconds";
               szmin = "minutes";
           }
           else
-  else
           {
               szmin = "minute";
           }
@@ -335,7 +335,7 @@ remainder.toString() + " seconds";
                                       && n != 'Q' && n != 'R' && n != 'S' && n != 'T'
                                       && n != 'U' && n != 'V' && n != 'W' && n != 'X'
                                       && n != 'Y' && n != 'Z'
-                                      && n != '0' && n != '1' && n != '2' && n != '3'
+&& n != '0' && n != '1' && n != '2' && n != '3'
                                       && n != '4' && n != '5' && n != '6' && n != '7'
                                       && n != '8' && n != '9'
                                       && n != '_' && n != '@' && n != '-' && n != '.' )
@@ -352,3 +352,4 @@ remainder.toString() + " seconds";
 mints.toString().split(".")[0] + " " + szmin;
       }
   }
+                                                                                                                   
