@@ -185,7 +185,7 @@ function complexity(filePath)
                }
 
             }
-            builder.MaxNestingDepth = maxNesting - 1;
+            builder.MaxNestingDepth = maxNesting;
          });
 
          fileBuilders[filePath].builders.push(builder);
