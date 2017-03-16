@@ -45,7 +45,7 @@ function ComplexityBuilder()
 
         this.report = function()
         {
-      if(this.MaxConditions >=8 || this.numOfLines >=100 || this.MaxNestingDepth >=3){
+      if(this.MaxConditions >8 || this.numOfLines >100 || this.MaxNestingDepth >3){
 
          console.log(
             (
