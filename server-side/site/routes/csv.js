@@ -55,6 +55,11 @@ function formatJsonAsCSV( items )
 				var pos = questionPos[ans.question];
 				row[pos] = ans.answer;
 			}
+			//bigo 3
+			for( var i=0; i < items.votes.length; i++ )
+			{
+				
+			}
 			
 		}
 
@@ -118,7 +123,7 @@ function sizeOfRow( items )
 		
 			
 			// for Big Oh > 3
-			for(var i=0; i < items.votes.length; i++ ){for(var i=0; i < items.votes.length; i++){} }
+			//for(var i=0; i < items.votes.length; i++ ){for(var i=0; i < items.votes.length; i++){} }
 			
 		}
 
