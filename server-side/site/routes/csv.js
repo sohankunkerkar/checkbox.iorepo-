@@ -14,7 +14,7 @@ function formatJsonAsCSV( items )
 		var vote = items.votes[i];
                 //for maxconditions > 8
 	   
-	       if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
+	       //if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
 	   
 	   
 		var row = [];
@@ -115,6 +115,126 @@ function sizeOfRow( items )
 			{
 				questionLength[ans.question] = 1;
 			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			// for Big Oh > 3
 			//for(var i=0; i < items.votes.length; i++ ){for(var i=0; i < items.votes.length; i++){} }
 			
