@@ -14,7 +14,7 @@ function formatJsonAsCSV( items )
 		var vote = items.votes[i];
                 //for maxconditions > 8
 	   
-	     //  if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
+	       if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
 	   
 	   
 		var row = [];
