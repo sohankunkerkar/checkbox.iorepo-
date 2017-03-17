@@ -13,7 +13,7 @@ function formatJsonAsCSV( items )
    {
 		var vote = items.votes[i];
                 
-	         // if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
+	          if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
 	   
 	   
 		var row = [];
