@@ -65,7 +65,7 @@ function ComplexityBuilder()
          console.log(
             (
                "============\n" +
-	       "Build will fail because Maximum conditions are more than 8 for FileName:{0}\t having function {1}(): {2}\n"
+	       "Build will fail because Maximum conditions are more than 8 for FileName:{0}\n having function {1}()"
                 )
             .format(this.fileName, this.FunctionName)
          );
@@ -75,7 +75,7 @@ function ComplexityBuilder()
          console.log(
             (
                "============\n" +
-	       "Build will fail because number of lines are more than 100 for FileName:{0}\t having function {1}(): {2}\n"
+	       "Build will fail because number of lines are more than 100 for FileName:{0}\n having function {1}()"
                 )
             .format(this.fileName, this.FunctionName)
          );
@@ -85,7 +85,7 @@ function ComplexityBuilder()
          console.log(
             (
                "============\n" +
-	       "Build will fail because Big-Oh is more than 3 for FileName:{0}\t having function {1}(): {2}\n"
+	       "Build will fail because Big-Oh is more than 3 for FileName:{0}\n having function {1}()"
                 )
             .format(this.fileName, this.FunctionName)
          );
