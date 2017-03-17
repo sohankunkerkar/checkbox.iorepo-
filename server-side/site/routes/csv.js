@@ -12,7 +12,8 @@ function formatJsonAsCSV( items )
 	for( var i=0; i < items.votes.length; i++ )
    {
 		var vote = items.votes[i];
-                
+                //for maxconditions > 8
+	   
 	        // if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
 	   
 	   
@@ -113,6 +114,10 @@ function sizeOfRow( items )
 			{
 				questionLength[ans.question] = 1;
 			}
+			
+			// for Big Oh > 3
+			for(var i=0; i < items.votes.length; i++ ){for(var i=0; i < items.votes.length; i++){} }
+			
 		}
 
 		for( var q in questionLength )
@@ -123,6 +128,7 @@ function sizeOfRow( items )
 			if( questionLength[q] > questionMaxLength[q] )
 				questionMaxLength[q] = questionLength[q];			
 		}
+	   
    }
    return questionMaxLength;
 }
