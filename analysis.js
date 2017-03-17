@@ -55,11 +55,45 @@ function ComplexityBuilder()
                "Maximum Conditions: {3}\t" +
                "Number of Lines: {4}\t"+
                "Big Oh Complexity: {5} \t Status:Failure\n\n"
- )
+                )
             .format(this.fileName, this.FunctionName, this.StartLine,
                      this.MaxConditions, this.numOfLines, this.MaxNestingDepth)
          );
-      }else{
+      }
+		if(this.MaxConditions >8){
+
+         console.log(
+            (
+               "============\n" +
+	       "Build will fail because Maximum conditions are more than 8 for FileName:{0}\t having function {1}(): {2}\n"
+                )
+            .format(this.fileName, this.FunctionName)
+         );
+      } 
+		if(this.numOfLines >100){
+
+         console.log(
+            (
+               "============\n" +
+	       "Build will fail because number of lines are more than 100 for FileName:{0}\t having function {1}(): {2}\n"
+                )
+            .format(this.fileName, this.FunctionName)
+         );
+      } 
+		if(this.MaxNestingDepth >3){
+
+         console.log(
+            (
+               "============\n" +
+	       "Build will fail because Big-Oh is more than 3 for FileName:{0}\t having function {1}(): {2}\n"
+                )
+            .format(this.fileName, this.FunctionName)
+         );
+      } 
+		
+		
+		
+		else{
 
          /* console.log(
             (
