@@ -111,7 +111,13 @@ function ComplexityBuilder()
 
 
 };
+	process.stdout.on('error', function( err ) {
+    if (err.code == "EPIPE") {
+        process.exit(0);
+    }
+});
 }
+
 
 // A function following the Visitor pattern. Provide current node to visit and function that is evaluated at each node.
 function traverse(object, visitor)
