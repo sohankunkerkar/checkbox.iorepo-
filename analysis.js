@@ -59,8 +59,7 @@ function ComplexityBuilder()
             .format(this.fileName, this.FunctionName, this.StartLine,
                      this.MaxConditions, this.numOfLines, this.MaxNestingDepth)
          );
-      }
-		if(this.MaxConditions >8){
+		 if(this.MaxConditions >8){
 
          console.log(
             (
@@ -90,6 +89,8 @@ function ComplexityBuilder()
             .format(this.fileName, this.FunctionName)
          );
       } 
+      }
+		
 		
 		
 		
@@ -300,3 +301,5 @@ main();
 
 
                                                                                                                    
+
+																												   
