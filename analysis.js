@@ -2,7 +2,7 @@ var esprima = require("esprima");
 var options = {tokens:true, tolerant: true, loc: true, range: true };
 var fs = require("fs");
 var glob = require('glob');
-emitter.setMaxListeners();
+//emitter.setMaxListeners();
 
 
 var fileBuilders = {};
@@ -90,7 +90,7 @@ function ComplexityBuilder()
                 )
             .format(this.fileName, this.FunctionName)
          );
-      } 
+      } */
       }
 		
 		
@@ -112,7 +112,7 @@ function ComplexityBuilder()
       }
 
 
-};    */
+};    
 	/*  process.stdout.on('error', function( err ) {
     if (err.code == "EPIPE") {
         process.exit(0);
