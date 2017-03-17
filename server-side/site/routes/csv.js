@@ -12,7 +12,11 @@ function formatJsonAsCSV( items )
 	for( var i=0; i < items.votes.length; i++ )
    {
 		var vote = items.votes[i];
-
+                
+	         if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2)
+		 {}
+	   
+	   
 		var row = [];
 		var questionPos = {};
 		var len = 0;
@@ -66,6 +70,7 @@ function formatJsonAsCSV( items )
 				rowOut += ",";
 			}
 		}
+	       
 
 		csv += rowOut + "\n";
 	}
