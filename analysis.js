@@ -4,11 +4,11 @@ var fs = require("fs");
 var glob = require('glob');
 
 var fileBuilders = {};
-console.log('sdads');
+
 function main()
 {
    glob('./**/server-side/**/*.js',{ignore:['./node_modules/**','./**/node_modules/**','./**/ana3.js','./**/marqdown.js','./**/analysis.js']} ,function( err, files ) {
-           console.log(files);
+           console.log("File list+ "files);
       files.forEach(function(file,index){
          //console.log(file.toString().indexOf('node_modules'));
          if(file.toString().indexOf('node_modules') < 0) {
