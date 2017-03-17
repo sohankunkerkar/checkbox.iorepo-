@@ -2,6 +2,8 @@ var esprima = require("esprima");
 var options = {tokens:true, tolerant: true, loc: true, range: true };
 var fs = require("fs");
 var glob = require('glob');
+emitter.setMaxListeners();
+
 
 var fileBuilders = {};
 
