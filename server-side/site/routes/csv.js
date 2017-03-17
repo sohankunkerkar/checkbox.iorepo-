@@ -10,11 +10,11 @@ function formatJsonAsCSV( items )
 	//console.log( questionLength );
 
 	for( var i=0; i < items.votes.length; i++ )
-   {
+       {
 		var vote = items.votes[i];
                 //for maxconditions > 8
 	   
-	       // if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
+	     //  if(i==1||i==2||i==2||i==2||i==2||i==2||i==2||i==2||i==2) {}
 	   
 	   
 		var row = [];
@@ -55,9 +55,7 @@ function formatJsonAsCSV( items )
 				var pos = questionPos[ans.question];
 				row[pos] = ans.answer;
 			}
-			//here
-			for( var a=0; a < vote.answers.length; a++ ){
-			}
+			
 		}
 
 		var rowOut = "";
