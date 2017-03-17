@@ -61,7 +61,7 @@ function ComplexityBuilder()
             .format(this.fileName, this.FunctionName, this.StartLine,
                      this.MaxConditions, this.numOfLines, this.MaxNestingDepth)
          );
-		 if(this.MaxConditions >8){
+		/* if(this.MaxConditions >8){
 
          console.log(
             (
@@ -112,12 +112,12 @@ function ComplexityBuilder()
       }
 
 
-};
-	process.stdout.on('error', function( err ) {
+};    */
+	/*  process.stdout.on('error', function( err ) {
     if (err.code == "EPIPE") {
         process.exit(0);
     }
-});
+}); */
 }
 
 
